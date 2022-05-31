@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" calculation-part="IE=edge" />
+    <meta
+      name="viewport"
+      calculation-part="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/Bitcoin-BTC-icon.png"
+      type="image/x-icon"
+    />
+    <title>BitCoin Money Master</title>
+    <!-- Bootstrap CSS Start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap CSS End-->
+    <!-- StyleSheet Start -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- StyleSheet End -->
+  </head>
+  <body>
+    <!-- Header Area Start -->
+    <header class="header-area mb-4 mt-4 text-center">
+      <div>
+        <h1>BitCoin Money Master</h1>
+        <hr />
+      </div>
+    </header>
+    <!-- Header Area End -->
+    <!-- Main Area Start -->
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="row">
+            <!-- Images Part start -->
+            <div class="col-xl-6">
+              <img src="images/BitCoin.png" class="img-fluid" alt="" />
+            </div>
+            <!-- Images Part end-->
+            <!-- Calculation Part Start -->
+            <div class="col-xl-6">
+              <div class="text-center bg-gray calculationPart">
+                <!-- Income Part Start -->
+                <h2>Income</h2>
+                <div class="row mb-4">
+                  <label for="inputIncomes" class="col-xl-2 col-form-label"
+                    >Income:</label
+                  >
+                  <div class="col-xl-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputIncomes"
+                      value="10000"
+                    />
+                  </div>
+                </div>
+                <!-- Income Part End -->
+                <!-- Expenses Start -->
+                <h2>Expenses</h2>
+                <div class="row mb-4">
+                  <label for="inputFoods" class="col-xl-2 col-form-label"
+                    >Food:</label
+                  >
+                  <div class="col-xl-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputFoods"
+                      value="3000"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="inputRents" class="col-xl-2 col-form-label"
+                    >Rent:</label
+                  >
+                  <div class="col-xl-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputRents"
+                      value="2000"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="inputClothes" class="col-xl-2 col-form-label"
+                    >Clothes:</label
+                  >
+                  <div class="col-xl-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputClothes"
+                      value="500"
+                    />
+                  </div>
+                </div>
+                <!-- Expenses End-->
+                <!-- Calculate The First Part Start -->
+                <div class="total-area mb-4">
+                  <button class="btn mb-4" id="calculateBtn">Calculate</button>
+                  <h2>Total Expenses: <span id="totalExpenses">00</span></h2>
+                  <h2>Balance: <span id="balance">00</span></h2>
+                </div>
+                <!-- Calculate The First Part End -->
+                <!-- Calculate The Second Part Start -->
+                <div class="row">
+                  <div class="d-flex align-items-center col-xl-5 save-mid">
+                    <div class="row">
+                      <label for="inputSave" class="col-xl-4 col-form-label"
+                        >Save:</label
+                      >
+                      <div class="col-xl-8">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputSave"
+                          value="20"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center col-xl-1 save-mid2">
+                    %
+                  </div>
+                  <div class="col-xl-6">
+                    <button class="btn" id="saveBtn">Save</button>
+                  </div>
+                </div>
+                <h2 class="mt-4">
+                  Saving Amount: <span id="saveAmount">00</span>
+                </h2>
+                <h2>Remaining Balance: <span id="remaingBalance">00</span></h2>
+              </div>
+              <!-- Calculate The Second Part End-->
+            </div>
+            <!-- Calculation Part End -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main Area End -->
+    <!-- Main JavaScript Start -->
+    <script src="./js/app.js"></script>
+    <!-- Main JavaScript End -->
+    <!-- Bootstrap JS Start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS End -->
+  </body>
+</html>
